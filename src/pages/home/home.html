@@ -3,16 +3,49 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Food Diary</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-row>
+    <ion-col>
+      <button style="float: left" ion-button clear icon-only><ion-icon name="arrow-dropleft"></ion-icon></button>
+    </ion-col>
+    <ion-col>
+      <h2 style="text-align:center;margin-top:7px;">Today</h2>
+    </ion-col>
+    <ion-col>
+      <button style="float: right" ion-button clear icon-only><ion-icon name="arrow-dropright"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+  <hr style="margin: 5px;background-color:darkgray;">
+ <ion-card>
+   <h3 class="heading">Goal</h3>
+   <h3 class="heading">Food</h3>
+   <h3 class="heading">Exercise</h3>
+   <h3 class="heading">Remaining</h3>
+   <h3 class="heading">Net</h3>
+ </ion-card>
+  <h2 style="text-align:center;margin-top:12px;">BreakFast</h2>
+  <ion-card padding>
+    <h3 class="heading1">Egg(9:00 AM)</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading1">Protein</h3><h3 class="heading2">10g</h3>
+    <h3 class="heading1">Carbohydrate</h3><h3 class="heading2">30g</h3>
+    <h3 class="heading1">Fat</h3><h3 class="heading2">5g</h3>
+  </ion-card>
+  <ion-card padding>
+    <h3 class="heading1">Egg(9:00 AM)</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading1">Protein</h3><h3 class="heading2">10g</h3>
+    <h3 class="heading1">Carbohydrate</h3><h3 class="heading2">30g</h3>
+    <h3 class="heading1">Fat</h3><h3 class="heading2">5g</h3>
+  </ion-card>
+  <ion-card padding>
+    <h3 class="heading1">Egg(9:00 AM)</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading1">Protein</h3><h3 class="heading2">10g</h3>
+    <h3 class="heading1">Carbohydrate</h3><h3 class="heading2">30g</h3>
+    <h3 class="heading1">Fat</h3><h3 class="heading2">5g</h3>
+  </ion-card>
+  <ion-fab bottom center>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>
