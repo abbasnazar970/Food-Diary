@@ -3,21 +3,35 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Food List</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+<ion-content style="background-color:#f4f4f4">
+  <button ion-button round class="but-left">Back</button>
+  <button ion-button round class="but-right">Barcode</button>
+  <button ion-button round class="but-right">Identify</button>
+
+  <ion-input type="text" placeholder="Search Food" class="search"></ion-input>
+
+  <ion-card style="margin-top: 25px">
+    <h2 padding style="text-align: center;">Recent Foods</h2>
+    <hr style="margin: 5px;background-color:darkgray;">
+
+    <h3 class="heading1">Eggs</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading3">30P 10C 30F</h3>
+
+    <h3 class="heading1">Bread</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading3">30P 10C 30F</h3>
+
+    <h3 class="heading1">Cookie</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading3">30P 10C 30F</h3>
+
+    <h3 class="heading1">Pop</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading3">30P 10C 30F</h3>
+
+    <h3 class="heading1">Chips</h3><h3 class="heading2">300cal</h3>
+    <h3 class="heading3">30P 10C 30F</h3>
+  </ion-card>
+
 </ion-content>
